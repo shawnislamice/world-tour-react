@@ -1,0 +1,26 @@
+.country-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.flag-container{
+  display: flex ;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+}
+.flag-container img{
+  object-fit: cover;
+  cursor: pointer;
+  width: 300px;
+  size: 200px;
+  border-radius: 10px;
+  filter: grayscale(1);
+}
+.flag-container img:hover{
+  filter: grayscale(0);
+  transition: 0.5s;
+  scale: 95%;
+}
